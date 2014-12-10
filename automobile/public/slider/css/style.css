@@ -1,0 +1,123 @@
+.rg-image-wrapper{
+	position:relative;
+	background:#1F1F1F url(../img/pattern.png) repeat top left;
+	color:#fff;
+	min-height:20px;
+	/*height: 380px; overflow: hidden;*/
+	height: 415px; overflow: hidden;
+}
+.rg-image{
+	position:relative;
+	text-align:center;
+	line-height:0px;
+	overflow: hidden;
+	/*top:-19%;*/
+}
+.rg-image img{
+	max-width: 100%;
+	max-height: 415px;
+    top:-100%; left:0; right: 0; bottom:-100%;
+    margin: auto;
+}
+.rg-image-nav a{
+	position:absolute;
+	top:48%;
+	left:0px;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.3;
+	outline:none;
+	z-index: 9999999;
+}
+.rg-image-nav a.rg-image-nav-next{
+	right:0px;
+	left:auto;
+	/*background-position:114% -6%;*/
+	background: url('../img/right.png') no-repeat scroll 0% 0% transparent;
+	width: 28px;
+	height: 28px;
+	top:48%;
+}
+.rg-image-nav a.rg-image-nav-prev{
+	left:0px;
+	right:auto;
+	background: url('../img/left.png') no-repeat scroll 0% 0% transparent;
+	width: 29px;
+	height: 28px;
+	top:48%;
+}
+.rg-image-nav a:hover{
+	opacity:0.8;
+}
+.rg-caption {
+	/*text-align:center;*/
+	margin-top:15px;
+	position:absolute;
+	border-top: 77px solid rgba(0,0,0,.93);
+	border-right: 35px solid transparent;
+	bottom: 0;
+}
+.rg-caption p{
+	font-size:21px;
+	letter-spacing:2px;
+	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+	line-height:6px;
+	padding:0 15px;
+	/*text-transform:uppercase;*/
+	/*margin-top: -40px;*/
+	margin-top: -55px;
+	color: #F9941D;
+}
+.rg-caption .carprice{
+	padding: 0 15px;
+}
+.rg-view{
+	height:30px;
+	display: none;
+}
+.rg-view a{
+	display:block;
+	float:right;
+	width:16px;
+	height:16px;
+	margin-right:3px;
+	background:#464646 url(../img/views.png) no-repeat top left;
+	border:3px solid #464646;
+	opacity:0.8;
+}
+.rg-view a:hover{
+	opacity:1.0;
+}
+.rg-view a.rg-view-full{
+	background-position:0px 0px;
+}
+.rg-view a.rg-view-selected{
+	background-color:#6f6f6f;
+	border-color:#6f6f6f;
+}
+.rg-view a.rg-view-thumbs{
+	background-position:0px -16px;
+}
+.rg-loading{
+	width:46px;
+	height:46px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	background:#000 url(../img/ajax-loader.gif) no-repeat center center;
+	margin:-23px 0px 0px -23px;
+	z-index:100;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	opacity:0.7;
+}
+
+@media only screen and (max-width: 40em){
+	.rg-image-wrapper{
+		position:relative;
+		background:#1F1F1F url(../img/pattern.png) repeat top left;
+		height: auto; overflow: hidden;
+	}
+	.rg-gallery{padding-left: 11px;}
+}

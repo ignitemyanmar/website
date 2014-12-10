@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'BauerBodoni';
+  src: url('fonts/bauerbodoni/BAUERB.eot');
+  src: local('☺'), url('../fonts/bauerbodoni/BAUERB.woff') format('woff'),
+       url('../fonts/bauerbodoni/BAUERB.ttf') format('truetype'), 
+       url('../fonts/bauerbodoni/BAUERB.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+	font-family:"Zawgyi-One",Georgia, "BauerBodoni", serif, "Open Sans";
+	font-size: 18px;
+	width:100%;
+	height: 100%;
+}
+
+p{font-family: 'Zawgyi-One';}
+h1,h2,h3,h4,h5,h6{font-family:Georgia, "BauerBodoni", serif, "Open Sans";}
+label{
+	font-family: Georgia, "BauerBodoni", serif; /*"Open Sans";*/
+}
+.unicodefont{font-family: "Zawgyi-One";
+	font-size: 14px;
+}
+	
+.row{max-width: 78em;}
+.admin_title{
+	text-shadow:2px 0 3px 2px rgba(255,244,0,1);
+	-webkit-text-shadow:2px 0 3px 2px rgba(255,244,0,1);
+	margin-top: 20px;
+}
+textarea{font-family:"Zawgyi-One", Georgia, "BauerBodoni", serif; /*"Open Sans";*/ }
+.text-red{color:red;}
+#icon-users,#icon-profile,#icon-user-edit{background:transparent url(../images/icons32.png?ver=20100531) no-repeat -600px -5px; margin-top: 20px;}
+#icon-tools,#icon-admin{background:transparent url(../images/icons32.png?ver=20100531) no-repeat -432px -5px;}
+#icon-edit,#icon-post{background:transparent url(../images/icons32.png?ver=20100531) no-repeat -552px -5px;}
+.icon32{float:left;height:36px;margin:14px 6px 0 0;width:36px;}
+.add-new-h2{font-style:normal;margin:0 6px;position:relative;top:-3px; padding: 20px;}
+.button{text-decoration:none;font-size:24px!important;line-height:1em;padding:0.4em 1em; font-size:1em;cursor:pointer;border-width:1px;border-style:solid;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;-khtml-box-sizing:content-box;box-sizing:content-box; color: #303030;background: transparent;border:1px solid #ccc; margin-left: 20px;}
+a.button{line-height: 1.25em; padding-left: 1.7em; padding-right: 1.7em;}
+.button.smalllogin{ padding: .3em .8em;}
+.button:hover{border:1px solid #222; background: transparent; color:black;}
+h2.title{font:normal normal 24px/29px Georgia,"Times New Roman","Bitstream Charter",Times,serif;margin:0;padding:14px 15px 3px 0;line-height:35px;text-shadow:rgba(255,255,255,1) 0 1px 0; margin-left: 0px;}
+input[type="text"],input[type="password"],input[type="file"],input[type="button"],input[type="submit"],input[type="reset"],select{border-style:solid;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:11px;border-radius:4px; float: left;}
+.buttonaction{
+	padding: 5px 12px;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background: #000;
+	color: white;
+	float: right;
+
+}
+.buttonaction:hover{
+	border:1px solid #e0e0e0;
+	background: #444;
+	padding: 5px 12px;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#eee;
+
+}
+
+#accordian {
+	margin-left:2%;
+	margin-top:35%;
+	/*background: #004050;*/
+	background: #554;
+	width: 100%;
+	color: white;
+	/*Some cool shadow and glow effect*/
+	/*box-shadow: 
+		0 2px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(28, 32, 40, 0.5);*/
+}
+/*heading styles*/
+#accordian h3 {
+	font-family:Georgia, "BauerBodoni", serif, "Open Sans";
+	font-size: 16px;
+	line-height: 34px;
+	padding: 0 7px;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	/*background: #003040; */
+	background: #1C2028; 
+	color:white;
+	/*background: linear-gradient(#003040, #002535);*/
+	background: linear-gradient(#1C2028, #000);
+}
+/*heading hover effect*/
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+	list-style-type: none;
+	background: #ccc;
+}
+/*links*/
+#accordian ul ul li a {
+	color: #0F1115;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 27px;
+	display: block;
+	padding: 0 15px;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	/*background: #003545;*/
+	color: white;
+	background: #222;
+	border-left: 5px solid #000;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+
+select , .addnew-form input[type="text"], .addnew-form .select2-container .select2-choice, .addnew-form .select2-container-multi .select2-choices {
+  border: 1px solid #999;
+  background-color: #ededed;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEDEDED', endColorstr='#FFFFFFFF');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ededed), color-stop(53%, #f6f6f6), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #ededed 0%, #f6f6f6 53%, #ffffff 100%);
+  background-image: -moz-linear-gradient(top, #ededed 0%, #f6f6f6 53%, #ffffff 100%);
+  background-image: -o-linear-gradient(top, #ededed 0%, #f6f6f6 53%, #ffffff 100%);
+  background-image: linear-gradient(top, #ededed 0%, #f6f6f6 53%, #ffffff 100%);
+  line-height: 1em;
+  width: 100%;
+  height: 40px !important;
+  padding-left: 10px;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: #666;
+  overflow: auto;
+}
+select{width: 50%; padding:6px 2px;}
+ .select2-choice, .addnew-form .select2-container-multi .select2-choices  {
+	padding-top: 1px;
+  	overflow: auto;
+}
+.select2-container-multi .{min-height: 150px;}
+.large-2 label{font-weight: bold;}
+
+ul.pagination li{height:2.3em;color:#fff;font-size:0.875em;margin-left:0.3125em;border-radius: 5px; -moz-border-radius:5px; -webkit-border-radius:5px; background: #000;padding: 5px 10px;}
+ul.pagination li a{display:block;padding:2px;color:#FF8B00;}
+ul.pagination li:hover a,ul.pagination li a:focus{background:transparent;}
+ul.pagination li.unavailable a{cursor:default;color:#999}
+ul.pagination li.unavailable:hover a,ul.pagination li.unavailable a:focus{background:transparent; color:red;}
+ul.pagination li.current a{background:#2ba6cb;color:blue;font-weight:bold;cursor:default}
+ul.pagination li.current a:hover,ul.pagination li.current a:focus{background:#2ba6cb}
+
+textarea{min-height: 100px; }
+/*.moviedetail{min-height: 150px;box-shadow: 0 0 2px 2px rgba(0,0,0,.1); max-height: 160px; overflow: hidden;}*/
+#container{ width:230px; margin:0px auto; padding:0px 0;box-shadow: 0 0 2px 2px rgba(0,0,0,.1); }
+#scrollbox{ width:230px; height:150px;  overflow:auto; overflow-x:hidden; border:1px solid #f2f2f2; }
+#container > p{ background:#eee; color:#666; font-family:Arial, sans-serif; font-size:0.75em; padding:5px; margin:0; text-align:right;}
+
+
+#footer{clear:both;position:relative;width:100%;}
+#footer{margin-top:-46px;border-top:1px;border-style:solid;}#footer,#footer a{font-size:12px;font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;font-style:italic;}#footer p{margin:0;padding:15px;line-height:15px;}#footer a{text-decoration:none;}#footer a:hover{text-decoration:underline;}
+#footer{color:#777;border-color:#d1d1d1;background:#F5F5F5;background:-moz-linear-gradient(bottom,#d7d7d7,#e4e4e4);background:-webkit-gradient(linear,left bottom,left top,from(#d7d7d7),to(#e4e4e4));}
+.content{height: 85%;width: 100%;}
+
+/*for add new occupation */
+ #fs {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	
+	box-sizing: border-box;
+	width: 50%;
+	margin: 50% 30%;
+	
+	/*stacking divs above each other*/
+	position: absolute;
+	display: none;
+}
+
+#fs span{
+	position: absolute;
+	right: 0;
+	top:0;
+	color: white;
+	border-radius: 20px;
+	-moz-border-radius:20px;
+	font-size: 14px;
+	padding: 8px 12px;
+	background: red;
+	cursor: pointer;
+}
+#flash_error{margin-bottom: 20px; color: rgba(255,0,0,.8);}
+#message{
+	border-radius: 3px;
+	background: #EBF8A4;
+	box-shadow: 0 0 15px 1px rgba(224, 114, 30, 0.9);
+	padding: 20px 30px;
+	margin: 50% 30%;
+	width: 30%;
+	border: 1px;
+	position: absolute;
+	display: none;
+}
+.noround{border-radius: none; -webkit-border-radius:none;}
+/*end for add new occupation */
+
+.loginform label, .loginform input{font-size: 1.2em; display: inline;}
+.loginform .title{text-transform: uppercase;}
+.button{ background: #000; color: white;}
+
+/* 
+* for multi gallery upload
+*/
+
+/* line 847, ../sass/app.scss */
+.addnew-form .gallery-input {
+  background: #eee;
+  height: 400px;
+  width: 90%;
+}
+/* line 853, ../sass/app.scss */
+.addnew-form .gallery-input ul {
+  list-style-type: none;
+}
+/* line 855, ../sass/app.scss */
+.addnew-form .gallery-input ul li {
+  float: left;
+  display: inline;
+  margin: 5px;
+}
+/* line 859, ../sass/app.scss */
+.addnew-form .gallery-input ul li img {
+  border: 1px dashed grey;
+  width: 180px;
+  height: 180px;
+}
+/* line 862, ../sass/app.scss */
+.addnew-form .gallery-input ul li span {
+  background: red;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -32px;
+  margin-top: 2px;
+  border-radius: 30px;
+  /*text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);*/
+  cursor: pointer;
+}
+
+/* line 871, ../sass/app.scss */
+.addnew-form .gallery-input .upload {
+  float: left;
+  display: inline;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: 1px dashed grey;
+  background: #ddd;
+
+}
+/* line 879, ../sass/app.scss */
+.addnew-form .gallery-input .upload:hover {
+  border-color: red;
+  color: white;
+  background-color: lightgreen;
+}
+.addnew-form .gallery-input .upload input[type='file']{
+  width:70px;
+  height: 70px;
+  position: absolute;
+  opacity: 0;
+}
+.addnew-form .gallery-input .upload span{
+  margin-top: 25px;
+  margin-left: 8px;
+  position: absolute;
+}
+.icon-cancel-circle:before {
+  color: black;
+  content: 'x';
+  margin-left: 8px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+}
+
+.removebtn, .removebtn1, .removebtn2, .removebtn3, .removebtn4{position:absolute; left:13%; margin-top:.8%; cursor:pointer; width:29px; height:29px; border-radius:50%; padding:5px 5px 3px 10px;  z-index:999999; background:red;}
+#addvideourl, #addvideourl1, #addvideourl2, #addvideourl3, #addvideourl4{cursor: pointer;}
+.filesize b{color:red;}
+.example1, .example2{font-size: 18px; color:#0f0;}

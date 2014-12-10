@@ -1,0 +1,200 @@
+.file-upload{
+  width: 20%;
+ float: left;
+  display: inline;
+  width: 180px;
+  height: 80px;
+  cursor: default;
+  border: 1px dashed grey;
+  background: #ddd;
+  text-align: center left;
+  font-weight:bold;
+  z-index: 11;
+}
+#image_file{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.file-upload:hover{
+    color: white;
+    background: #829094;
+
+}
+
+.file-upload span{
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 90px;
+  padding: 30px 33%;
+  top: 35%;
+  cursor: pointer;
+  color: #333;
+}
+.file-upload span:hover{
+ cursor: pointer;
+
+}
+.file-upload input[type='file']{
+  opacity: 0;
+}
+.preview , .oldpreview, .preview1{
+  position: relative;
+  float: left;
+  border: none;
+  margin-top: -15px;
+  margin-left: 40px;
+}
+.preview img, .oldpreview img{
+  width: 10px;
+  max-width: 10px;
+  height: 70px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+.warning{
+    color: red;
+    background:rgba(198, 15, 19, 0.1);
+}
+
+.previewstyle{
+float:right;  
+}
+.previewstyle img{
+    background-color:#fff;
+    border-width: 1px;
+    border-radius: 5px;
+    /*border: 3px solid rgb(255, 255, 255);*/
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    display:block;
+    float:right;    
+    max-height: 200px;
+    max-width: 130px;
+
+}
+.preview {
+   margin-top: 8px;
+   float: left;
+}
+#upload_form > div {
+    margin-bottom:10px;
+}
+
+#image_file {
+    max-width:250px;
+    margin-top: -20px;
+}
+#progress_info {
+    font-size:10pt;
+    height: 1px;
+}
+#fileinfo,#error,#error2,#abort,#warnsize {
+    color:#f00;
+    display:none;
+    font-size:10pt;
+    font-style:italic;
+    margin-top:10px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+* for multi gallery upload
+*/
+
+/* line 847, ../sass/app.scss */
+.addnew-form .gallery-input {
+  background: #eee;
+  height: 200px;
+  width: 100%;
+}
+/* line 853, ../sass/app.scss */
+.addnew-form .gallery-input ul {
+  list-style-type: none;
+}
+/* line 855, ../sass/app.scss */
+.addnew-form .gallery-input ul li {
+  float: left;
+  display: inline;
+  margin: 5px;
+}
+/* line 859, ../sass/app.scss */
+.addnew-form .gallery-input ul li img {
+  border: 1px dashed grey;
+  max-width:185px;
+  max-height:110px;
+  width: auto;
+  height: auto;
+}
+/* line 862, ../sass/app.scss */
+.addnew-form .gallery-input ul li span {
+  background: red;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -32px;
+  margin-top: 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 7px 0;
+}
+
+/* line 871, ../sass/app.scss */
+.addnew-form .gallery-input .upload {
+  float: left;
+  display: inline;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: 1px dashed grey;
+  background: #ddd;
+
+}
+/* line 879, ../sass/app.scss */
+.addnew-form .gallery-input .upload:hover {
+  border-color: red;
+  color: white;
+  background-color: lightgreen;
+}
+.addnew-form .gallery-input .upload input[type='file']{
+  width:70px;
+  height: 70px;
+  position: absolute;
+  opacity: 0;
+}
+.addnew-form .gallery-input .upload span{
+  margin-top: 25px;
+  margin-left: 8px;
+  position: absolute;
+  color: #333;
+}
+.icon-cancel-circle:before {
+  color: black;
+  content: 'x';
+  margin-left: 8px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+}
+
+
+.progress {
+    height: .6rem;
+    border: 1px solid #CCC;
+    padding: 0.05rem 0;
+    margin-bottom: 0.55556rem;
+    width: 125px;
+    position: relative;
+    margin-top: .3rem;
+
+  }
+  .progress .meter {
+      background: none repeat scroll 0% 0% #008CBA !important;
+      height: 100%;
+      display: block;
+      height: 5px !important;
+      border-radius: none !important;
+      margin: 0 !important;
+      padding:2px 0 !important;
+  }

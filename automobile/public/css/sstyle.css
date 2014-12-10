@@ -1,0 +1,77 @@
+@media only screen and (max-width: 40em){
+    body{
+        background: rgba(47,8,1,.9) url(../img/background.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .reveal-modal.small {margin-left: -15%;width: 30%;}
+    .car-by-make{padding:3px 5px 12px; width: 48%; margin: .95%;text-align: center;}
+    .car-list{padding: 3px 5px 12px;width: 98%;margin: 0.65%;min-height: 110px;height: auto;margin-bottom: 1.3rem;
+            overflow: hidden; max-height: 400px;}
+    /*.car-list img{max-width: 100%;}*/
+    .advertisement{margin-top: 39px;}
+    .advertisement .panel{text-align: center;}
+    .large-3 label:after{content: '';}
+    .nav-stacked li{float: left;clear: both;}
+    .carimg img{padding: 0;max-width: 100%; max-height: 300px auto; width: auto;}
+    .require {color: #F00;float: left;width:15px;}
+    .car-list-frame .carimg{max-height: auto;}
+    .large-3 label:after{content: '';}
+    .title_frame, #title_frame{padding-bottom:18px;z-index:11; width:100%;min-height: 2.8rem;}
+    .small-12{margin-bottom: 1rem;}
+    .carinfo-for-small{padding-top:1rem;}
+
+    .search-label, .latest-label, .btn, .search, .view{font-family: "Ayar Wagaung"; 
+          padding:9.5px 24px;font-size:1rem;
+          background: #f47f11; /* Old browsers */
+          background: -moz-linear-gradient(top,  #f47f11 1%, #c15b01 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f47f11), color-stop(100%,#c15b01)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  #f47f11 1%,#c15b01 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  #f47f11 1%,#c15b01 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  #f47f11 1%,#c15b01 100%); /* IE10+ */
+          background: linear-gradient(to bottom,  #f47f11 1%,#c15b01 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47f11', endColorstr='#c15b01',GradientType=0 ); /* IE6-9 */
+          border-top-left-radius:3px;
+          border-bottom-left-radius:3px;
+        }
+    .latest-label{border-radius: 3px;}
+    .latestnews{margin-bottom: 6px;
+                background: rgba(0,0,0,0.5);
+                padding: 18px 9px;
+        }
+    .latestnews a {
+        word-spacing: 3px;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+        color: #FFF;
+        margin-bottom: 11px;
+    }
+    .text-center img{max-width: 100%;max-height: 250px; max-width: 450px;}
+    .btn, .search, .view{padding: 4px 8px;}
+    .info .view {
+        text-align: center;
+        float: right;
+        color: #111;
+        padding: 5px 13px 4px;
+        margin-top: -3px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .search, .view, .sm_btn, .title {
+        border-radius: 4px;
+    }
+    .search, .view, .sm_btn, .title {
+        border-radius: 4px;
+    }
+    .search, .view {
+        padding: 0.2em 1em;
+        margin-bottom: 0px;
+        color: #FFF;
+        float: right;
+    }
+}

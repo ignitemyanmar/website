@@ -1,0 +1,73 @@
+@extends('../admin')
+@section('content')
+	<style type="text/css">
+		iframe {max-width: 150px; max-height: 110px;}
+		.previewstyle{max-width: 150px;}
+	</style>
+		
+<div class="large-12 columns">
+		<div id="icon-edit" class="icon32"><br /></div>
+		<h2 class="title">Car Make List</h2><br><br>
+	<form action = "/searchcarmake" method= "post" class="row">
+			<div class="columns large-6">
+				<input name="keyword" type="text" placeholder = " Search Carmake" data-required="true">
+			</div>
+			<div class="columns large-2">
+				<input type = "submit" value = "Search" class="buttonaction" required>
+			</div>
+			<div class="columns large-4">
+				<a href="/car-make-create" class="button round right">Add New Make </a>
+			</div>
+	</form>
+</div>
+
+<div class="columns large-12">
+	@if(!$makes)
+		<p class="warning">You've not posted any Car Make yet,</p>
+	@else
+
+		<strong>Total Record: {{$count}}</strong> 
+	
+    	<form  class="row custom" action = "/delcarmakes" method= "post">
+			<table width="100%">
+				  <thead>
+					<tr>
+					      <th width="2%">&nbsp;</th>
+					      <th width="10%">Image</th>
+					      <th width="50%">Make</th>
+					      <th width="10%">Show / Hide at Home</th>
+					      <th width="20%" style="text-align:center;">Actions</th>
+					 </tr>
+				  </thead>
+				  <tbody>
+				  		<?php $i=1;?>
+						  @foreach($makes as $make)
+						    <tr valign="top">
+						      	<td><input type="checkbox" name="recordstoDelete[]" value="{{ $make['id'] }}" /></td>
+							    <td><div class="previewstyle"><img src="../makephoto/php/files/thumbnail/{{$make['image']}}"></div></td>
+							    <td>{{$make['make']}}</td>
+							    <td>
+							    	@if($make['status']==0)
+							    		<a href="make-status-change/show/{{$make->id}}" class="buttonaction">Show</a>
+							    	@else
+							    		<a href="make-status-change/hide/{{$make->id}}" class="buttonaction">Hide</a>
+							    	@endif
+							    </td>
+							    <td style="text-align:right;">
+							      	<a href="/car-make-update/{{ $make['id'] }}"  class="buttonaction">Edit</a>
+							        <a href="/deletecarmake/{{ $make['id'] }}"   class="buttonaction">Delete</a>
+								</td>
+						    </tr>
+						    <tr><td colspan="8"></td></tr>
+						    <?php $i++; ?>	
+					    @endforeach	 
+					    <tr><td colspan="8"><ul class="pagination">{{ $makes->links() }}</ul></td></tr>   	   
+				  </tbody>
+			</table> <!--end of table-->
+			
+			 <input type="submit" value="Delete" name="delete" class="button round" /> 
+		</form>	
+		@endif
+	</div>
+
+@stop
