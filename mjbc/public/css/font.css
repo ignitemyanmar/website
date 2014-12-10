@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "HelveticaNeueLTStd UltLt";
+    src: url('../fonts/HelveticaNeueLTStd UltLt/HelveticaNeueLTStd-UltLt.eot');
+    src: url('../fonts/HelveticaNeueLTStd UltLt/HelveticaNeueLTStd-UltLt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueLTStd UltLt/HelveticaNeueLTStd-UltLt.svg#HelveticaNeueLTStd UltLt') format('svg'),
+    url('../fonts/HelveticaNeueLTStd UltLt/HelveticaNeueLTStd-UltLt.woff') format('woff'),
+    url('../fonts/HelveticaNeueLTStd UltLt/HelveticaNeueLTStd-UltLt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Glober SemiBold Free";
+    src: url('../fonts/GloberSemiBoldFree/GloberSemiBoldFree.eot');
+    src: url('../fonts/GloberSemiBoldFree/GloberSemiBoldFree.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GloberSemiBoldFree/GloberSemiBoldFree.svg#Glober SemiBold Free') format('svg'),
+    url('../fonts/GloberSemiBoldFree/GloberSemiBoldFree.woff') format('woff'),
+    url('../fonts/GloberSemiBoldFree/GloberSemiBoldFree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Zawgyi-One,.zg, .zg li, .zg p, .zg h3, .zg h4{font-family: "Zawgyi-One" !important;}

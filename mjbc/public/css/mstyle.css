@@ -1,0 +1,26 @@
+@media only screen and (min-width: 40.063em) and (max-width: 64em){
+    body{
+        background: rgba(47,8,1,.9) url(../img/background.jpg) no-repeat;
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-attachment:fixed;
+        -o-background-size: 100% 100%, auto;
+        -moz-background-size: 100% 100%, auto;
+        -webkit-background-size: 100% 100%, auto;
+        background-size: 100% 100%, auto;
+        color: #fff;
+    }
+    .contentframe.off-canvas-wrap.move-left a.exit-off-canvas:hover {
+        background: rgba(255, 255, 255, 0.05); } 
+    .latestnews{margin-bottom: 6px;
+                background: rgba(0,0,0,0.5);
+                padding: 18px 9px;
+        }
+    .latestnews a {
+        word-spacing: 3px;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+        color: #FFF;
+        margin-bottom: 11px;
+    }
+}

@@ -1,0 +1,71 @@
+/* Elastislide Style */
+.es-carousel-wrapper{
+	position:relative;
+	margin-bottom:20px;
+}
+.es-carousel{
+	overflow:hidden;
+	margin-top: -24px;
+	float: right;
+	margin-right: 12px;
+}
+.es-carousel ul{
+	display:none;
+}
+.es-carousel ul li{
+	/*height:100%;*/
+	/*background: #fff;*/
+	/*background: #f00 url(../img/pattern.png) repeat top left;*/
+	float:left;
+	display:block;
+	width: 9px;
+	height:9px;
+	overflow: hidden;
+	margin-right: 3px;
+}
+.es-carousel ul li a{
+	display:block;
+	background-color:#fff;
+	border-style:solid;
+	/*border-color:#222;*/
+	/*opacity:0.7;*/
+	-webkit-touch-callout:none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.es-carousel ul li.selected a{
+	border-color:#C38966;
+	opacity:1;
+}
+/*.es-carousel ul li{width:19.5%; }*/
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	width: 100%;
+	display: none;
+}
+.es-nav span{
+	position:absolute;
+	top:50%;
+	left:0px;
+	background:transparent url(../img/nav_thumbs.png) no-repeat top left;
+	width:14px;
+	height:26px;
+	margin-top:-13px;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0;
+	display: none;
+}
+.es-nav span.es-nav-next{
+	right:0px;
+	left:auto;
+	background-position:top right;
+	display: none;
+}
+.es-nav span:hover{
+	/*opacity:1.0;*/
+}
